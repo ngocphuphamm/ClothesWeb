@@ -9,6 +9,6 @@ module.exports = async () => {
         });
         Logger.getInstance().logger.info('Successfully connected to database');
     } catch (err) {
-        Logger.getInstance().logger.error(`MongoDB connection failed with error: ${e}`);
+        Logger.getInstance().logger.error(`MongoDB connection failed with error: ${err}`);
     }
 };
